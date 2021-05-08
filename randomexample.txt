@@ -1,0 +1,14 @@
+Component CompanyDetails(props) // props ={ company_id: 10}
+    useEffect(
+        () => {
+            // fetch data for the current company props.company_id
+        }, [props.company_id]
+    )
+Component CompanyInfo
+
+Component CompanyList
+    state: currentClickedCompany (null initially)
+list of all companies
+    loop through all the companies
+        < CompanyInfo> if it's clicked, then you show the Company Details page for that clicked Company
+    currentClickedCompany && CompanyDetails
